@@ -1,6 +1,13 @@
 <!DOCTYPE html>
 <html lang="sv">
 <head>
+  <!-- Redirect om domänen är www -->
+<script>
+  if (window.location.hostname === "www.twistcase.com") {
+    window.location.href = "https://twistcase.com" + window.location.pathname;
+  }
+</script>
+
   <meta charset="UTF-8" />
   <title>Min Hemsida</title>
 </head>
