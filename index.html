@@ -1,18 +1,70 @@
 <!DOCTYPE html>
 <html lang="sv">
 <head>
-  <!-- Redirect om domänen är www -->
-<script>
-  if (window.location.hostname === "www.twistcase.com") {
-    window.location.href = "https://twistcase.com" + window.location.pathname;
-  }
-</script>
-
   <meta charset="UTF-8" />
-  <title>Min Hemsida</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <!-- Redirect från www.twistcase.com till twistcase.com -->
+  <script>
+    if (window.location.hostname === "www.twistcase.com") {
+      window.location.href = "https://twistcase.com" + window.location.pathname + window.location.search + window.location.hash;
+    }
+  </script>
+
+  <title>Twistcase</title>
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <h1>Hej och välkommen!</h1>
-  <p>Detta är min gratis hemsida via GitHub Pages.</p>
+  <!-- Hero Section with Video -->
+  <div class="hero">
+    <video id="heroVideo" autoplay muted playsinline>
+      <source src="media/startvideo.mp4" type="video/mp4">
+      Din webbläsare stödjer inte video-taggen.
+    </video>
+    <div class="overlay" id="heroOverlay">
+      <h1>Twistcase</h1>
+      <p class="slogan">[Din slogan här]</p>
+    </div>
+    <img id="heroImage" src="media/hero.jpg" alt="Bakgrundsbild" />
+  </div>
+
+  <!-- Produkter -->
+  <section class="products">
+    <h2>Produkter</h2>
+    <div class="product">
+      <!-- Byt ut src + alt, lägg till fler .product-divs efter behov -->
+      <img src="media/produkt1.jpg" alt="Produkt 1" />
+      <p class="product-text">[Text om produkt 1]</p>
+    </div>
+    <div class="product">
+      <img src="media/produkt2.jpg" alt="Produkt 2" />
+      <p class="product-text">[Text om produkt 2]</p>
+    </div>
+  </section>
+
+  <!-- Sociala & Köplänkar -->
+  <footer>
+    <div class="social-links">
+      <a href="#" target="_blank">Instagram</a>
+      <a href="#" target="_blank">YouTube</a>
+    </div>
+    <div class="buy-links">
+      <a href="https://swish.nu/" target="_blank">Köp med Swish</a>
+      <a href="https://www.paypal.com/paypalme/dittnamn" target="_blank">Köp med PayPal</a>
+    </div>
+  </footer>
+
+  <script>
+    const video = document.getElementById('heroVideo');
+    const image = document.getElementById('heroImage');
+
+    // Göm bilden tills videon är klar
+    image.style.display = 'none';
+
+    video.addEventListener('ended', () => {
+      video.style.display = 'none';
+      image.style.display = 'block';
+    });
+  </script>
 </body>
 </html>
