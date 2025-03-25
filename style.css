@@ -1,0 +1,119 @@
+/* Grundläggande stil */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Helvetica Neue', sans-serif;
+  color: #111;
+  background-color: #fff;
+  line-height: 1.6;
+}
+
+/* Hero (video eller bild + overlay) */
+.hero {
+  position: relative;
+  height: 100vh;
+  width: 100%;
+  overflow: hidden;
+}
+
+.hero video,
+.hero img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  z-index: 0;
+}
+
+.overlay {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  color: white;
+  z-index: 2;
+  padding: 1rem;
+  text-shadow: 0 2px 6px rgba(0, 0, 0, 0.6);
+}
+
+.overlay h1 {
+  font-size: 3rem;
+  margin-bottom: 0.5rem;
+  letter-spacing: 2px;
+}
+
+.slogan {
+  font-size: 1.2rem;
+  font-style: italic;
+}
+
+/* Produkter */
+.products {
+  padding: 3rem 1rem;
+  max-width: 900px;
+  margin: auto;
+}
+
+.products h2 {
+  text-align: center;
+  font-size: 2rem;
+  margin-bottom: 2rem;
+}
+
+.product {
+  margin-bottom: 2rem;
+  text-align: center;
+}
+
+.product img {
+  width: 100%;
+  max-width: 500px;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+}
+
+.product-text {
+  margin-top: 1rem;
+  font-size: 1rem;
+  color: #444;
+}
+
+/* Footer */
+footer {
+  background-color: #f7f7f7;
+  padding: 2rem 1rem;
+  text-align: center;
+}
+
+footer a {
+  margin: 0 1rem;
+  text-decoration: none;
+  color: #333;
+  font-weight: bold;
+}
+
+footer a:hover {
+  color: #000;
+}
+
+/* Responsivitet */
+@media (max-width: 768px) {
+  .overlay h1 {
+    font-size: 2rem;
+  }
+
+  .slogan {
+    font-size: 1rem;
+  }
+
+  .product img {
+    max-width: 100%;
+  }
+}
