@@ -4,73 +4,130 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Twistcaoose</title>
+  <title>Twistcase™</title>
   <style>
-    * { margin: 0; padding: 0; box-sizing: border-box; }
-    body, html { height: 100%; font-family: sans-serif; }
+    body { font-family: Helvetica, sans-serif; margin: 0; background: #fff; color: #111; }
+    header { text-align: center; padding: 2rem 1rem; }
+    header h1 span:nth-child(4n+1) { color: #FFD700; }
+    header h1 span:nth-child(4n+2) { color: #FF4136; }
+    header h1 span:nth-child(4n+3) { color: #2ECC40; }
+    header h1 span:nth-child(4n+4) { color: #0074D9; }
+    header p { max-width: 600px; margin: 1rem auto 0; font-size: 1.1rem; color: #444; }
 
-    #hero {
-      position: relative;
-      height: 100vh;
-      overflow: hidden;
-    }
-
-    #hero video {
-      position: absolute;
-      top: 0; left: 0;
-      width: 100%;
-      height: 100%;
-      object-fit: cover;
-      z-index: -1;
-    }
-
-    #hero-text {
-      position: relative;
-      z-index: 1;
-      height: 100%;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      text-align: center;
-      color: white;
-      text-shadow: 0 0 10px black;
-      padding: 2rem;
-    }
-
-    #info {
-      background: white;
-      text-align: center;
-      padding: 4rem 1rem;
-    }
-
-    #info img {
-      max-width: 90%;
-      height: auto;
-    }
-
-    #info h2 {
-      font-size: 1.8rem;
-      margin: 2rem 0 1rem;
-      color: #111;
-    }
+    .products { display: flex; flex-wrap: wrap; justify-content: center; padding: 2rem 1rem; gap: 2rem; }
+    .product { width: 300px; border: 1px solid #eee; border-radius: 12px; overflow: hidden; box-shadow: 0 2px 5px rgba(0,0,0,0.05); }
+    .product img { width: 100%; height: auto; display: block; }
+    .product h3, .product p { margin: 1rem; }
+    .product button { margin: 1rem; padding: 0.5rem 1rem; background: #0074D9; color: #fff; border: none; border-radius: 4px; cursor: pointer; }
+    .product button:hover { background: #005fa3; }
   </style>
 </head>
 <body>
 
-  <section id="hero">
-    <video autoplay muted playsinline>
-      <source src="assets/Min film.mp4" type="video/mp4">
-      Din webbläsare stöder inte video-taggen.
-    </video>
-    <div id="hero-text">
-      <h1>Twistcase</h1>
-    </div>
-  </section>
+<header>
+  <h1><span>T</span><span>w</span><span>i</span><span>s</span><span>t</span><span>c</span><span>a</span><span>s</span><span>e</span><span>™</span></h1>
+  <p>Twistcase™ skapar framtidens dosetter – funktionella, snygga och lekfulla. Med magnetisk vridmekanism, färgkombinationer att älska och formgivning som förtjänar sin plats i hemmet.<br>Det största och enda som hänt dosettmarknaden på hundra år.</p>
+</header>
 
-  <section id="info">
-    <img src="assets/twistcase.png" alt="Twistcase dosett">
-    <h2>det största och enda som hänt dosettmarknaden på hundra år</h2>
-  </section>
+<section class="products">
+
+  <div class="product">
+    <img src="assets/twistcase_weekly_svart.jpg" alt="Twistcase Weekly Svart">
+    <h3>Twistcase Weekly – Svart</h3>
+    <p>Sju insatser för dina tabletter.</p>
+    <!-- Klistra in Shopify Buy Button för denna produkt här -->
+    <button>Köp nu</button>
+  </div>
+
+  <div class="product">
+    <img src="assets/twistcase_weekly_vit.jpg" alt="Twistcase Weekly Vit">
+    <h3>Twistcase Weekly – Vit</h3>
+    <p>Sju insatser för dina tabletter.</p>
+    <!-- Klistra in Shopify Buy Button för denna produkt här -->
+    <button>Köp nu</button>
+  </div>
+
+  <div class="product">
+    <img src="assets/twistcase_weekly_rosa.jpg" alt="Twistcase Weekly Rosa">
+    <h3>Twistcase Weekly – Rosa</h3>
+    <p>Sju insatser för dina tabletter.</p>
+    <!-- Klistra in Shopify Buy Button för denna produkt här -->
+    <button>Köp nu</button>
+  </div>
+
+  <div class="product">
+    <img src="assets/twistcase_weekly_gra.jpg" alt="Twistcase Weekly Grå">
+    <h3>Twistcase Weekly – Grå</h3>
+    <p>Sju insatser för dina tabletter.</p>
+    <!-- Klistra in Shopify Buy Button för denna produkt här -->
+    <button>Köp nu</button>
+  </div>
+
+  <div class="product">
+    <img src="assets/twistcase_weekly_gramelerad.jpg" alt="Twistcase Weekly Gråmelerad">
+    <h3>Twistcase Weekly – Gråmelerad</h3>
+    <p>Sju insatser för dina tabletter.</p>
+    <!-- Klistra in Shopify Buy Button för denna produkt här -->
+    <button>Köp nu</button>
+  </div>
+
+  <div class="product">
+    <img src="assets/twistcase_weekly_frosty.jpg" alt="Twistcase Weekly Frosty">
+    <h3>Twistcase Weekly – Frosty</h3>
+    <p>Sju insatser för dina tabletter.</p>
+    <!-- Klistra in Shopify Buy Button för denna produkt här -->
+    <button>Köp nu</button>
+  </div>
+
+  <div class="product">
+    <img src="assets/twistcase_daily_svart.jpg" alt="Twistcase Daily Svart">
+    <h3>Twistcase Daily – Svart</h3>
+    <p>Fyra insatser för dina tabletter.</p>
+    <!-- Klistra in Shopify Buy Button för denna produkt här -->
+    <button>Köp nu</button>
+  </div>
+
+  <div class="product">
+    <img src="assets/twistcase_daily_vit.jpg" alt="Twistcase Daily Vit">
+    <h3>Twistcase Daily – Vit</h3>
+    <p>Fyra insatser för dina tabletter.</p>
+    <!-- Klistra in Shopify Buy Button för denna produkt här -->
+    <button>Köp nu</button>
+  </div>
+
+  <div class="product">
+    <img src="assets/twistcase_daily_rosa.jpg" alt="Twistcase Daily Rosa">
+    <h3>Twistcase Daily – Rosa</h3>
+    <p>Fyra insatser för dina tabletter.</p>
+    <!-- Klistra in Shopify Buy Button för denna produkt här -->
+    <button>Köp nu</button>
+  </div>
+
+  <div class="product">
+    <img src="assets/twistcase_daily_gra.jpg" alt="Twistcase Daily Grå">
+    <h3>Twistcase Daily – Grå</h3>
+    <p>Fyra insatser för dina tabletter.</p>
+    <!-- Klistra in Shopify Buy Button för denna produkt här -->
+    <button>Köp nu</button>
+  </div>
+
+  <div class="product">
+    <img src="assets/twistcase_daily_gramelerad.jpg" alt="Twistcase Daily Gråmelerad">
+    <h3>Twistcase Daily – Gråmelerad</h3>
+    <p>Fyra insatser för dina tabletter.</p>
+    <!-- Klistra in Shopify Buy Button för denna produkt här -->
+    <button>Köp nu</button>
+  </div>
+
+  <div class="product">
+    <img src="assets/twistcase_daily_frosty.jpg" alt="Twistcase Daily Frosty">
+    <h3>Twistcase Daily – Frosty</h3>
+    <p>Fyra insatser för dina tabletter.</p>
+    <!-- Klistra in Shopify Buy Button för denna produkt här -->
+    <button>Köp nu</button>
+  </div>
+
+</section>
 
 </body>
 </html>
